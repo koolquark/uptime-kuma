@@ -1,13 +1,13 @@
 <template>
     <div :class="classes">
-        <div v-if="! $root.socket.connected && ! $root.socket.firstConnect" class="lost-connection">
+        <!-- <div v-if="! $root.socket.connected && ! $root.socket.firstConnect" class="lost-connection">
             <div class="container-fluid">
                 {{ $root.connectionErrorMsg }}
                 <div v-if="$root.showReverseProxyGuide">
                     {{ $t("Using a Reverse Proxy?") }} <a href="https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy" target="_blank">{{ $t("Check how to config it for WebSocket") }}</a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Desktop header -->
         <header v-if="! $root.isMobile" class="d-flex flex-wrap justify-content-center py-3 mb-3 border-bottom">
@@ -16,9 +16,9 @@
                 <span class="fs-4 title">{{ $t("Quick Mon") }}</span>
             </router-link>
 
-            <a v-if="hasNewVersion" target="_blank" href="https://github.com/louislam/uptime-kuma/releases" class="btn btn-info me-3">
+            <!-- <a v-if="hasNewVersion" target="_blank" href="https://github.com/louislam/uptime-kuma/releases" class="btn btn-info me-3">
                 <font-awesome-icon icon="arrow-alt-circle-up" /> {{ $t("New Update") }}
-            </a>
+            </a> -->
 
             <ul class="nav nav-pills">
                 <li v-if="$root.loggedIn" class="nav-item me-2">
@@ -63,11 +63,11 @@
                                 </router-link>
                             </li>
 
-                            <li>
+                            <!-- <li>
                                 <a href="https://github.com/louislam/uptime-kuma/wiki" class="dropdown-item" target="_blank">
                                     <font-awesome-icon icon="info-circle" /> {{ $t("Help") }}
                                 </a>
-                            </li>
+                            </li> -->
 
                             <li v-if="$root.loggedIn && $root.socket.token !== 'autoLogin'">
                                 <button class="dropdown-item" @click="$root.logout">
