@@ -12,7 +12,7 @@ class Mattermost extends NotificationProvider {
     async send(notification, msg, monitorJSON = null, heartbeatJSON = null) {
         let okMsg = "Sent Successfully.";
         try {
-            const mattermostUserName = notification.mattermostusername || "Uptime Kuma";
+            const mattermostUserName = notification.mattermostusername || "Uptime View";
             // If heartbeatJSON is null, assume non monitoring notification (Certificate warning) or testing.
             if (heartbeatJSON == null) {
                 let mattermostTestData = {

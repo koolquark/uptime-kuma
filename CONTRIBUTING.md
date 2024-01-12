@@ -1,6 +1,6 @@
 # Project Info
 
-First of all, I want to thank everyone who have made pull requests for Uptime Kuma. I never thought the GitHub community would be so nice! Because of this, I also never thought that other people would actually read and edit my code. It is not very well structured or commented, sorry about that.
+First of all, I want to thank everyone who have made pull requests for Uptime View. I never thought the GitHub community would be so nice! Because of this, I also never thought that other people would actually read and edit my code. It is not very well structured or commented, sorry about that.
 
 The project was created with vite.js (vue3). Then I created a subdirectory called "server" for the server part. Both frontend and backend share the same `package.json`.
 
@@ -28,7 +28,7 @@ The frontend code builds into "dist" directory. The server (express.js) exposes 
 - src (Frontend source code)
 - test (unit test)
 
-## Can I create a pull request for Uptime Kuma?
+## Can I create a pull request for Uptime View?
 
 Yes or no, it depends on what you will try to do. Since I don't want to waste your time, be sure to **create an empty draft pull request or open an issue, so we can have a discussion first**. Especially for a large pull request or you don't know if it will be merged or not.
 
@@ -54,7 +54,7 @@ Here are some references:
 - Any breaking changes
 - Duplicated pull requests
 - Buggy
-- UI/UX is not close to Uptime Kuma
+- UI/UX is not close to Uptime View
 - Modifications or deletions of existing logic without a valid reason.
 - Adding functions that is completely out of scope
 - Converting existing code into other programming languages
@@ -84,7 +84,7 @@ Before deep into coding, discussion first is preferred. Creating an empty pull r
 
 ## Project Styles
 
-I personally do not like something that requires so many configurations before you can finally start the app. I hope Uptime Kuma installation will be as easy as like installing a mobile app.
+I personally do not like something that requires so many configurations before you can finally start the app. I hope Uptime View installation will be as easy as like installing a mobile app.
 
 - Easy to install for non-Docker users, no native build dependency is needed (for x86_64/armv7/arm64), no extra config, and no extra effort required to get it running
 - Single container for Docker users, no very complex docker-compose file. Just map the volume and expose the port, then good to go
@@ -190,7 +190,7 @@ npm run build
 
 ### Frontend Details
 
-Uptime Kuma Frontend is a single page application (SPA). Most paths are handled by Vue Router.
+Uptime View Frontend is a single page application (SPA). Most paths are handled by Vue Router.
 
 The router is in `src/router.js`
 
@@ -235,7 +235,7 @@ Please add **all** the strings which are translatable to `src/lang/en.json` (if 
 **Don't include any other languages in your initial pull request** (even if this is your mother tongue), to avoid merge-conflicts between weblate and `master`.
 The translations can then (after merging a PR into `master`) be translated by awesome people donating their language skills.
 
-If you want to help by translating Uptime Kuma into your language, please visit the [instructions on how to translate using weblate](https://github.com/louislam/uptime-kuma/blob/master/src/lang/README.md).
+If you want to help by translating Uptime View into your language, please visit the [instructions on how to translate using weblate](https://github.com/louislam/uptime-kuma/blob/master/src/lang/README.md).
 
 ## Spelling & Grammar
 
@@ -267,8 +267,8 @@ https://github.com/louislam/uptime-kuma-wiki
 - `beta2`: Latest beta build
 - `2.x.x-beta.x`
 - `nightly2`: Dev build
-- `base2`: Basic Debian setup without Uptime Kuma source code (Full features)
-- `base2-slim`: Basic Debian setup without Uptime Kuma source code
+- `base2`: Basic Debian setup without Uptime View source code (Full features)
+- `base2-slim`: Basic Debian setup without Uptime View source code
 - `pr-test2`: For testing pull request without setting up a local environment
 
 #### v1
@@ -278,9 +278,9 @@ https://github.com/louislam/uptime-kuma-wiki
 - `1.x.x-beta.x`: Beta build
 - `beta`: Latest beta build
 - `nightly`: Dev build
-- `base-debian`: Basic Debian setup without Uptime Kuma source code
+- `base-debian`: Basic Debian setup without Uptime View source code
 - `pr-test`: For testing pull request without setting up a local environment
-- `base-alpine`: (Deprecated) Basic Alpine setup without Uptime Kuma source code
+- `base-alpine`: (Deprecated) Basic Alpine setup without Uptime View source code
 - `1-alpine`, `alpine`: (Deprecated)
 - `1.x.x-alpine`: (Deprecated)
 

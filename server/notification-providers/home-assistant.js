@@ -16,7 +16,7 @@ class HomeAssistant extends NotificationProvider {
             await axios.post(
                 `${notification.homeAssistantUrl.trim().replace(/\/*$/, "")}/api/services/notify/${notificationService}`,
                 {
-                    title: "Uptime Kuma",
+                    title: "Uptime View",
                     message,
                     ...(notificationService !== "persistent_notification" && { data: {
                         name: monitor?.name,
